@@ -13,8 +13,10 @@ acts_as_votable 이란 루비 Gem을 이용하여 간단하게 이미지를 업�
 #### 오류내용
 - 이미지 업로드 기능 설계 중 imagepicker? 오류
 50분 동안 삽질하여 패닉상태에 빠졌었는데
+
 `
 sudo apt-get update 
 sudo apt-get install imagemagick
 `
+
 위의 두 줄로 해결하였다.
