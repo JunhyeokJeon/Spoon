@@ -16,6 +16,7 @@ acts_as_votable 이란 루비 Gem을 이용하여 간단하게 이미지를 업�
 
 `
 sudo apt-get update 
+
 sudo apt-get install imagemagick
 `
 
