@@ -1,5 +1,5 @@
 class PinsController < ApplicationController
-  before_action :find_pin, only: [:show, :edit, :update, :destroy]
+  before_action :find_pin, only: [:show, :edit, :update, :destroy, :upvote]
 
   # Read
   def index
@@ -43,6 +43,11 @@ class PinsController < ApplicationController
       redirect_to root_path, notice: "Pin was Successfully deleted"
   end
 
+  # like
+  def upvote
+    @pin.upvote_by current_user
+    redirect_to :back
+  end
 
   private
 
