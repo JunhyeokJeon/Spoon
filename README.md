@@ -15,7 +15,7 @@ acts_as_votable 이란 루비 Gem을 이용하여 간단하게 이미지를 업�
 50분 동안 삽질하여 패닉상태에 빠졌었는데
 
 `
-sudo apt-get update <br>
+sudo apt-get update /
 sudo apt-get install imagemagick
 `
 
