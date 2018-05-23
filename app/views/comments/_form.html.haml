@@ -1,0 +1,22 @@
+= form_for([@pin, @pin.comments.build]) do |f|
+  %p
+    .form-group
+      = f.label :description, for: "exampleFormControlTextarea1"
+      %br
+      = f.text_area :description, class: "form-control", id: "exampleFormControlTextarea1", rows: "3"
+  %p
+    = f.button :submit, class: "btn btn-primary"
+
+-# <%= form_for([@post, @post.comments.build]) do |f| %>
+-#   <p>
+-#     <%= f.label :name %><br>
+-#     <%= f.text_field :name %>
+-#   </p>
+-#   <p>
+-#     <%= f.label :body %><br>
+-#     <%= f.text_area :body %>
+-#   </p>
+-#   <p>
+-#     <%= f.submit %>
+-#   </p>
+-# <% end %>

@@ -1,20 +1,22 @@
 !!! 5
 %html
 %head
-  %title Pin Board
+  %title Spoon_beta
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
   = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   = csrf_meta_tags
 %body
   %nav.navbar.navbar-default
     .container
-      .navbar-brand= link_to "Pin Board", root_path
+      .navbar-brand= link_to "Spoon_beta", root_path
 
       - if user_signed_in?
         %ul.nav.navbar-nav.navbar-right
           %li= link_to "New Pin", new_pin_path
+          %li= link_to "My Page", '/mypage'
           %li= link_to "Account", edit_user_registration_path
           %li= link_to "Sign Out", destroy_user_session_path, method: :delete
+
       - else
         %ul.nav.navbar-nav.navbar-right
           %li= link_to "Sign In", new_user_session_path

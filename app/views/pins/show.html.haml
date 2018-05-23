@@ -9,6 +9,27 @@
         %p
         Submitted by
         = @pin.user.email
+
+        #comments
+          %h2
+          = @pin.comments.count
+          &nbsp Comments
+
+          = render @pin.comments
+
+          - if user_signed_in?
+            %h3 Add a comment:
+            = render "comments/form"
+          - else
+            %p
+            = link_to "Sign In", new_user_session_path
+
+        -# <h2><%= @post.comments.count %> Comments</h2>
+        -# <%= render @post.comments %>
+        -#
+        -# <h3>Add a comment:</h3>
+        -# <%= render "comments/form"%>
+
       .panel-footer
         .row
           .col-md-6
@@ -21,5 +42,6 @@
                 %psan.glyphicon.glyphicon-heart
                   = @pin.get_upvotes.size
               - if user_signed_in?
-                = link_to "Edit", edit_pin_path, class: "btn btn-default"
-                = link_to "Delete", pin_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"
+                - if current_user.id == @pin.user_id
+                  = link_to "Edit", edit_pin_path, class: "btn btn-default"
+                  = link_to "Delete", pin_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"

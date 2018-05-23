@@ -1,0 +1,9 @@
+%h2.mypage_text
+  = @user.email
+
+#pins.transition-enabled
+  - @user.pins.each do |pin|
+    .box.panel.panel-default
+      = link_to (image_tag pin.image.url), pin
+      .panel-body
+        = link_to pin.title, pin

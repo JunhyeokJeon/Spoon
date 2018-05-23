@@ -49,6 +49,14 @@ class PinsController < ApplicationController
     @pin.upvote_by current_user
     redirect_to :back
   end
+  
+  def mypage
+
+      @user = current_user
+
+
+  end
+  
 
   private
 
