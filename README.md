@@ -18,7 +18,7 @@ Main 페이지 작성, 서비스 첫 화면에 로그인 화면을 띄어주며,
 - post, comment 모델 생성
 - bootstrp 설정 (application.css.scss, application.js)
 
-##### 18녈 05월 23일
+##### 18녈 05월 24일
 * 프로젝트 재생성 (Pjt Name: Spoon_beta)
 시간관계상 처음부터 프로젝트를 파서 시작하기 어려울 것이라 판단함. 그리고 spoon sns는 혼자 밥먹는 모습을 사진과 함께 description을 추가하여 포스팅하는 것, 타인의 포스팅에 공감하는 spoon을 입력하는 것, 타인의 글에 코멘트를 작성하는 것의 기본적인 sns기능을 필요로하는 것이다.
 
