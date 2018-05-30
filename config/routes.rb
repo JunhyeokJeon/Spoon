@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  # rails routes
   devise_for :users
   resources :pins do
     resources :comments
@@ -6,6 +8,8 @@ Rails.application.routes.draw do
       put "like", to: "pins#upvote"
     end
   end
-get '/mypage' => 'pins#mypage'
-  root "pins#index"
+
+  # custom
+  get '/mypage' => 'pins#mypage'
+    root "pins#index"
 end
