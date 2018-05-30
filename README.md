@@ -128,19 +128,19 @@ views/pins/show.html.haml
 
 ## 5. 모델 속성 정보
 1. User
-| id | email | nickname | password | profile_image |
-|----|--------|--------|--------|--------|
-| integer | string | string | string | string |
+ id | email | nickname | password | profile_image 
+----|--------|--------|--------|--------
+ integer | string | string | string | string 
 
 2. Pin(Post)
-|id|title|description|user_id|image|
-|--|--|--|--|--|
-|integer|string|text|integer|string|
+id|title|description|user_id|image
+--|--|--|--|--
+integer|string|text|integer|string
 
 3. comment
-|id|description|user_id|pin_id|user_nickname|user_email|
-|--|--|--|--|--|--|
-|integer|text|integer|integer|string|string|
+id|description|user_id|pin_id|user_nickname|user_email
+--|--|--|--|--|--
+integer|text|integer|integer|string|string
 
 
 ## 6. 사용한 Gem 정리
