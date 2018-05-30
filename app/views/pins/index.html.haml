@@ -1,9 +1,16 @@
-#pins.transition-enabled
-  - @pins.each do |pin|
-    .box.panel.panel-default
-      = link_to (image_tag pin.image.url), pin
-      .panel-body
-        %h2= link_to pin.title, pin
-        %p.user
-        Submitted by
-        = pin.user.email
+- if @pins.length == 0
+  %p.index-nt-icon
+    %i.fas.fa-exclamation-triangle.index-nt-icon
+    %br
+    %br
+    %span.index-nt-icon-inner Nothing
+- else
+  #pins.transition-enabled
+    - @pins.each do |pin|
+      .box.panel.panel-default
+        = link_to (image_tag pin.image.url), pin
+        .panel-body
+          %h2= link_to pin.title, pin
+          %p.user
+          Submitted by
+          = pin.user.email

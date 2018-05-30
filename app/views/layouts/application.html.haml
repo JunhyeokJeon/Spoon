@@ -2,13 +2,14 @@
 %html
 %head
   %title Spoon_beta
+  %link{crossorigin: "anonymous", href: "https://use.fontawesome.com/releases/v5.0.13/css/all.css", integrity: "sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp", rel: "stylesheet"}
   = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
   = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
   = csrf_meta_tags
 %body
   %nav.navbar.navbar-default
     .container
-      .navbar-brand= link_to "Spoon_beta", root_path
+      .navbar-brand.main-logo= link_to "Spoon", root_path
 
       - if user_signed_in?
         %ul.nav.navbar-nav.navbar-right

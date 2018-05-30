@@ -28,6 +28,15 @@ Main 페이지 작성, 서비스 첫 화면에 로그인 화면을 띄어주며,
 - My Profile page
 - Comment Model을 새로 생성한 후 Pin과 User 모델들과의 관계 설정
 
+##### 18녈 05월 30일
+* front-end design
+- body background
+- logo design
+- index>panel border
+
+* views file
+- 만약 어떤 콘텐츠도 존재하지 않을 시 아이콘과 함께 nothing을 표시해 준다.
+
 ##### 서비스 명칭 : 혼밥감성 -> Spoon(스푼)
 
 ##### 서비스 컨셉
@@ -80,7 +89,7 @@ comment에 rails g migraition을 통해 comment 모델에 user_email 칼럼을 �
 
 - bash
 
-``` 
+```
 $rails g migration add_user_email_to_comments user_email:string
 ```
 
@@ -135,6 +144,9 @@ https://getbootstrap.com
 https://m.blog.naver.com/PostView.nhn?blogId=qls0147&logNo=220627002837&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F
 
 https://stackoverflow.com
+
+https://fontawesome.com/icons/exclamation-triangle?style=solid
+
 
 ## 8. 완성본 스크린샷
 page1
