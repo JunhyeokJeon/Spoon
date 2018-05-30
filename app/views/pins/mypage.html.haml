@@ -1,5 +1,17 @@
-%h2.mypage_text
-  = @user.email
+%div.profile-box
+  %div.image
+    %div.img-wrap
+      = image_tag @user.image.url(:medium), class: "profile-image-show"
+  %div.info
+    %p
+      %span E-mail
+      %span= @user.email
+
+    %p
+      %span Nickname
+      %span= @user.nickname
+    %p
+      = link_to "Edit", edit_user_registration_path, class: "btn btn-primary"
 
 #pins.transition-enabled
   - @user.pins.each do |pin|

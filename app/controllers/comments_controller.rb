@@ -4,6 +4,7 @@ class CommentsController < ApplicationController
     @comment = @pin.comments.create(params[:comment].permit(:description))
     @comment.user_id = current_user.id
     @comment.user_email = current_user.email
+    @comment.user_nickname = current_user.nickname
 
     if @comment.save
       redirect_to pin_path(@pin)

@@ -37,6 +37,10 @@ Main 페이지 작성, 서비스 첫 화면에 로그인 화면을 띄어주며,
 * views file
 - 만약 어떤 콘텐츠도 존재하지 않을 시 아이콘과 함께 nothing을 표시해 준다.
 
+* user 모델 업데이트
+- 프로필 사진과 닉네임 속성 추가
+- 닉네임, 이메일 validates 추가
+
 ##### 서비스 명칭 : 혼밥감성 -> Spoon(스푼)
 
 ##### 서비스 컨셉
@@ -149,6 +153,10 @@ https://fontawesome.com/icons/exclamation-triangle?style=solid
 
 
 ## 8. 완성본 스크린샷
+updated page: mapage
+
+![mypage_jun](https://user-images.githubusercontent.com/28127231/40716593-7d0cd95a-6444-11e8-8ec4-530c9c84fb6d.png)
+
 page1
 
 ![main page](https://user-images.githubusercontent.com/28127231/40472283-f637a916-5f73-11e8-93a0-0af11a927fbc.png)
