@@ -128,16 +128,19 @@ views/pins/show.html.haml
 
 ## 5. 모델 속성 정보
 1. User
- |id | email | nickname | password | profile_image |
+
+|id | email | nickname | password | profile_image |
 |--------|--------|--------|--------|--------|
- integer | string | string | string | string 
+|integer | string | string | string | string 
 
 2. Pin(Post)
+
 |id|title|description|user_id|image|
 |--------|--------|--------|--------|--------|
 |integer|string|text|integer|string|
 
 3. comment
+
 |id|description|user_id|pin_id|user_nickname|user_email|
 |--------|--------|--------|--------|--------|--------|
 |integer|text|integer|integer|string|string|
@@ -189,6 +192,5 @@ page3
 - 글들을 보여주는 show와 index부분의 글과 제목, 내용 뿐만아니라 글 작성자의 프로필 사진 노출시키기 (size 약 50x50: 인스타와 유사하게)
 - 댓글 좋아요 기능
 
-| column | column |
-|--------|--------|
+
 |        |        |
