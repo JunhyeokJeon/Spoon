@@ -36,6 +36,7 @@ Main 페이지 작성, 서비스 첫 화면에 로그인 화면을 띄어주며,
 
 * views file
 - 만약 어떤 콘텐츠도 존재하지 않을 시 아이콘과 함께 nothing을 표시해 준다.
+- 포스팅 작성자에 원랜 이메일이 표시되었는데, 일반 sns처럼 닉네임이 표시되도록 하였다.
 
 * user 모델 업데이트
 - 프로필 사진과 닉네임 속성 추가
@@ -153,7 +154,7 @@ https://fontawesome.com/icons/exclamation-triangle?style=solid
 
 
 ## 8. 완성본 스크린샷
-updated page: mapage
+updated page: mypage
 
 ![mypage_jun](https://user-images.githubusercontent.com/28127231/40716593-7d0cd95a-6444-11e8-8ec4-530c9c84fb6d.png)
 
@@ -168,3 +169,6 @@ page2
 page3
 
 ![my page](https://user-images.githubusercontent.com/28127231/40472284-f66ccb46-5f73-11e8-8480-29b2c59e7f00.png)
+
+## 9. 추후 추가할 것
+- 글들을 보여주는 show와 index부분의 글과 제목, 내용 뿐만아니라 글 작성자의 프로필 사진 노출시키기 (size 약 50*50: 인스타와 유사하게)
